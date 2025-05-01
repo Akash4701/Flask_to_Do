@@ -1,0 +1,231 @@
+:root {
+    --primary: #4a6bff;
+    --primary-hover: #3a5bd9;
+    --dark: #2d3748;
+    --light: #f8fafc;
+    --gray: #718096;
+    --success: #38a169;
+    --danger: #e53e3e;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --border-radius: 8px;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: var(--dark);
+    line-height: 1.5;
+    padding-bottom: 3rem;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .page-header {
+    padding: 2.5rem 0 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, rgba(74, 107, 255, 0.1) 0%, rgba(74, 107, 255, 0.2) 100%);
+    border-bottom: 1px solid rgba(74, 107, 255, 0.1);
+  }
+
+  .page-header h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .page-subtitle {
+    color: var(--gray);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--border-radius);
+    background-color: white;
+    transition: all 0.2s ease;
+  }
+
+  .form-control:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(74, 107, 255, 0.2);
+  }
+
+  .form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .form-check-input {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+    accent-color: var(--primary);
+  }
+
+  .form-check-label {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn-primary {
+    background-color: var(--primary);
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+  }
+
+  .btn-outline-dark {
+    border: 1px solid var(--dark);
+    background: transparent;
+    color: var(--dark);
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .btn-outline-dark:hover {
+    background-color: var(--dark);
+    color: white;
+  }
+
+  .alert {
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1.5rem;
+  }
+
+  .alert-danger {
+    background-color: rgba(229, 62, 62, 0.1);
+    border-left: 4px solid var(--danger);
+    color: var(--danger);
+  }
+
+  .table-container {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+
+  .table th {
+    background-color: #f8fafc;
+    font-weight: 600;
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 2px solid rgba(74, 107, 255, 0.1);
+  }
+
+  .table td {
+    padding: 1rem;
+    border-bottom: 1px solid #edf2f7;
+    vertical-align: middle;
+  }
+
+  .table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .table tr:hover {
+    background-color: #f8fafc;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.35rem 0.65rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .badge-primary {
+    background-color: rgba(74, 107, 255, 0.1);
+    color: var(--primary);
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .search-results {
+    background-color: rgba(74, 107, 255, 0.05);
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1.5rem;
+    display: inline-block;
+  }
+
+  .search-results strong {
+    color: var(--primary);
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+  }
+
+  .empty-state-icon {
+    font-size: 3rem;
+    color: var(--gray);
+    margin-bottom: 1rem;
+  }
+
+  .empty-state-text {
+    color: var(--gray);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
